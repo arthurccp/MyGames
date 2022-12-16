@@ -233,7 +233,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-AU-Wd5">
-                                <rect key="frame" x="22" y="404.66666666666674" width="346" height="265.33333333333326"/>
+                                <rect key="frame" x="22" y="405.33333333333326" width="346" height="264.66666666666674"/>
+                                <color key="backgroundColor" name="second"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-wQ-hmc">
                                 <rect key="frame" x="16" y="705" width="358" height="40"/>
@@ -241,7 +242,7 @@
                                     <constraint firstAttribute="height" constant="40" id="PmD-Fh-6an"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Adicionar"/>
                                 <connections>
                                     <action selector="addEditingGame:" destination="40i-2y-uC0" eventType="touchUpInside" id="XL1-Xc-Aiz"/>
                                 </connections>
@@ -252,14 +253,14 @@
                                     <constraint firstAttribute="height" constant="100" id="nuk-nq-bq8"/>
                                 </constraints>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHe-hn-B9H">
-                                <rect key="frame" x="22" y="370.33333333333331" width="346" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHe-hn-B9H">
+                                <rect key="frame" x="22" y="370.33333333333331" width="346" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deF-JL-JRj">
-                                <rect key="frame" x="22" y="520" width="346" height="35"/>
+                                <rect key="frame" x="22" y="520.33333333333337" width="346" height="34.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Toque para adicionar a imagem de capa"/>
                                 <connections>
