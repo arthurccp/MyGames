@@ -119,7 +119,7 @@
                                     <outlet property="ivCover" destination="Qff-sp-wbF" id="few-YL-IMU"/>
                                     <outlet property="lbConsole" destination="os1-yB-jeQ" id="wK6-7m-iNG"/>
                                     <outlet property="lbTitle" destination="pp4-RU-B24" id="hOg-K9-1Sl"/>
-                                    <segue destination="5Sc-sb-gNF" kind="show" id="whM-xh-BXU"/>
+                                    <segue destination="5Sc-sb-gNF" kind="show" identifier="gameSegue" id="UlL-PE-zZA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -131,7 +131,7 @@
                     <navigationItem key="navigationItem" title="Lista de jogos" id="A2r-yj-mMM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="L4G-d2-mPf">
                             <connections>
-                                <segue destination="40i-2y-uC0" kind="show" id="xmK-k3-qnQ"/>
+                                <segue destination="40i-2y-uC0" kind="show" identifier="newGameSegue" id="ueP-HR-Qma"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -148,11 +148,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="svP-Yv-tgR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="svP-Yv-tgR">
                                 <rect key="frame" x="16" y="193" width="358" height="631"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9p-RN-vdn">
                                 <rect key="frame" x="16" y="129" width="358" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ekl-Re-xJp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -165,6 +168,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano de Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S07-vf-fxl">
                                 <rect key="frame" x="16" y="156" width="358" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hGD-Mc-BsU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -193,7 +199,7 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="yfe-ea-ide">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="vV5-b5-slH">
                             <connections>
-                                <segue destination="40i-2y-uC0" kind="show" id="iTe-XW-aJn"/>
+                                <segue destination="40i-2y-uC0" kind="show" id="s0P-JL-n8j"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -201,12 +207,12 @@
                         <outlet property="ivCover" destination="svP-Yv-tgR" id="Uu5-4H-mT9"/>
                         <outlet property="lbConsole" destination="f9p-RN-vdn" id="CIL-fC-Jkb"/>
                         <outlet property="lbReleaseDate" destination="S07-vf-fxl" id="01j-92-b9g"/>
-                        <outlet property="lbTitle" destination="Zjn-Om-2xx" id="MJ9-Qw-VXX"/>
+                        <outlet property="lbTitle" destination="Lbp-Yn-5Hr" id="raX-lo-89w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="br3-Io-G75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1254" y="1215"/>
+            <point key="canvasLocation" x="-1523" y="1162"/>
         </scene>
         <!--Adicionar novo jogo-->
         <scene sceneID="1zE-W5-9jF">
@@ -301,7 +307,7 @@
                             <constraint firstItem="deF-JL-JRj" firstAttribute="height" secondItem="OYv-AU-Wd5" secondAttribute="height" multiplier="0.13191" id="zlf-75-24Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Adicionar novo jogo" id="DM0-ml-HM4"/>
+                    <navigationItem key="navigationItem" title="Adicionar novo jogo" largeTitleDisplayMode="never" id="DM0-ml-HM4"/>
                     <connections>
                         <outlet property="btAddEdit" destination="Gdm-wQ-hmc" id="sdc-Cc-njd"/>
                         <outlet property="btCover" destination="deF-JL-JRj" id="Pc8-pa-jf1"/>
@@ -313,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ac-i3-19f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="1215"/>
+            <point key="canvasLocation" x="54" y="1184"/>
         </scene>
         <!--Jogos-->
         <scene sceneID="Tyf-4V-UWU">
@@ -375,7 +381,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iTe-XW-aJn"/>
+        <segue reference="ueP-HR-Qma"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="console" width="23" height="23"/>
