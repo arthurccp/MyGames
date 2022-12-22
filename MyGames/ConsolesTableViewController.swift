@@ -20,6 +20,8 @@ class ConsolesTableViewController: UITableViewController {
     }
     func loadConsoles(){
         consolesManager.loadConsoles(wth: context)
+        tableView.reloadData()
+
     }
     
     @IBAction func addConsole(_ sender: UIBarButtonItem) {
